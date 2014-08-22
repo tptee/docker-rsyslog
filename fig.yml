@@ -1,0 +1,11 @@
+elasticsearch:
+  image: webwurst/elasticsearch
+  ports:
+    - "9200"
+
+rsyslog:
+  build: .
+  expose:
+    - "514"
+  links:
+    - elasticsearch

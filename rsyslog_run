@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+envconf --in /etc/rsyslog.d/80-elasticsearch.conf.env --out /etc/rsyslog.d/80-elasticsearch.conf
+exec rsyslogd -n
